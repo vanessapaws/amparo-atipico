@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="siteroxo.css">
+
+    <title>Amparo Atipico</title>
+
+</head>
+
+<body>
+
+    <div class="div-1">
+        <div class="logo">
+            <img src="logo.png" class="logo-principal">
+        </div>
+        <nav>
+            <a href="#home">Home</a>|
+            <a href="#sobre">Projeto</a>|
+            <a href="#doacao">Compra</a>|
+            <a href="#caixas">Doações</a>|
+            <a href="#quemsomos">Quem somos</a>
+
+        </nav>
+
+    </div>
+    <div class="div-2" id="home">
+        <div class="plateia">
+
+        </div>
+    </div>
+    <div class="div-3" id="sobre">
+
+        <div class="div-3-left">
+            <h1> Quem é a Amparo Atípico?</h1>
+            <img src="roupa.jpg" class="highlight-img">
+            <p>A AMPARO ATÍPICO é uma startup feita por autistas que possui como objetivo apoiar mulheres autistas que
+                estão passando pela maternidade. Sabe-se que cerca de 85% das pessoas autistas estão fora do mercado de
+                trabalho, e com isto, subsidiar uma maternidade, muitas vezes solo é muito difícil. Com isto, o projeto
+                promove apoio a essas mulheres, focando também na moda circular, com a diminuição de impacto ambiental
+                que vestimentas causam ao ambiente.
+                Desta forma, conseguimos unir o apoio social e sustentabilidade, que são as premissas desse projeto.
+                É possível realizar a venda e compra de roupas nova e semi-novas de bebês desde Recém-Nascido até 1 ano.
+                Também é possível doar roupinhas, caso você não esteja usando mais.
+            </p>
+            <a href="#" class="m-link"><b>Ler mais >></b> </a>
+        </div>
+
+        <div class="div-3-right">
+            <!--others materias com menos relevancia-->
+            <div class="others">
+                <img src="figura2.png" class="img-others">
+                <p><b>Para compra: </b>
+                    Para realizar a compra é preciso apenas preencher o formulário que se encontra no site, e enviamos a
+                    você um link onde pode adicionar seu laudo, e em seguida encaminhamos o link com todas as roupinhas
+                    que temos a disposição, separadas por meses do bebê.
+                </p>
+                <a href="#" class="m-link"><b> Ler mais >> </b></a>
+            </div>
+            <div class="others">
+                <img src="figura2.png" class="img-others">
+                <p><b>Para doação: </b>
+                    É muito comum que bebês creçam muito, mas muito rápido. Desta forma, um modo de evitar que essas
+                    roupinhas sejam descartadas, ou fiquem paradas na sua casa, é encaminhando para pessoas que podem
+                    estar precisando delas. E esse é o intuito da Startup, criar uma ponte entre pessoas que estão
+                    dispostas a doar, e pessoas que precisam de apoio.
+                </p>
+                <a href="#" class="m-link"> <b>Ler mais >></b> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-4" id="doacao">
+        <div class="div-4-left">
+
+            <img src="apoie.png" class="apoie">
+
+
+        </div>
+
+
+
+
+
+
+        <div class="div-4-right">
+
+            <h1> Formulário de Inscrição para Compra </h1><br>
+            <form action="/submit" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" id="telefone" name="telefone" required><br>
+
+                <label for="cid">Cid da Mãe:</label><br>
+                <input type="text" id="cid" name="cid" required><br>
+
+                <label for="genero">Gênero do Bebê:</label><br>
+                <select id="genero" name="genero" required>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+                <label>Observações:</label>
+                <textarea class="form control" placeholder="Escreva aqui observações sobre o produto."></textarea><br>
+
+                <hr>
+
+                <input type="checkbox">Eu aceito os termos de uso<br>
+                <input type="checkbox">Eu aceito receber promoções no e-mail<br><br>
+
+                <center><a href="termos.html"><input type="button" value="Ler os termos de uso"
+                            class="btn btn-warning"></a><br><br>
+                    <center>
+
+                        <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div class="div-5" id="caixas">
+        <div class="div-5-left">
+
+            <h1> Formulário para Venda e Doação </h1><br>
+            <form action="/submit" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" id="telefone" name="telefone" required><br>
+
+                <label for="cid">Endereço:</label><br>
+                <input type="text" id="cid" name="cid" required><br>
+
+                <label for="genero">Doação ou Venda?:</label><br>
+                <select id="genero" name="genero" required>
+                    <option value="feminino">Doação</option>
+                    <option value="masculino">Venda</option>
+                    <option value="outros">Ambos</option>
+                </select><br>
+                <label>Observações:</label>
+                <textarea class="form control" placeholder="Escreva aqui observações sobre o produto."></textarea><br>
+
+                <hr>
+
+                <input type="checkbox">Eu aceito os termos de uso<br>
+                <input type="checkbox">Eu aceito receber promoções no e-mail<br><br>
+
+                <center><a href="termos.html"><input type="button" value="Ler os termos de uso"
+                            class="btn btn-warning"></a><br><br>
+                    <center>
+
+                        <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+        <div class="div-5-right">
+            <img src="apoie2.png" class="apoie">
+
+
+        </div>
+    </div>
+
+    <div class="div-6" id="quemsomos">
+        <link rel="stylesheet" href="css/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" target="_blank"
+            href="https://api.whatsapp.com/send?phone=5513996572781&text=Ol%C3%A1,%20gostaria%20de%20entrar%20em%20contato%20com%20a%20AMulti">
+            <div class="rwb-tooltip"><b></b></div> <br>
+            <img src="">
+        </a>
+        <p>
+            <center>DevOps: Vanessa Leandro de Freitas, ETEC ®</center>
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
